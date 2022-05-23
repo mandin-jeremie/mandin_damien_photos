@@ -1,11 +1,63 @@
 @import "../../../styles/vars";
 
+// Mobile -----------------------------------
+
+.containerHeaderMobile {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    height: 12em;
+    max-height: 100px;
+
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+
+    .blocLogoMobile {
+        width: 20%;
+        margin: 20px;
+    }
+
+    .logoHeaderMobile {
+        width: 20vh;
+    }
+
+    .burgerButtonMobile {
+        color: white;
+        min-width: 80px;
+        min-height: 30px;
+
+    }
+
+    .navButtonsMobile {}
+
+    .navButtonMobile {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+            Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $text-primary;
+        text-decoration: none;
+    }
+
+    .your-componentMobile {
+        color: $text-primary;
+    }
+}
+
+// Desktop -----------------------------------
+
 .containerHeader {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.6);
     display: flex;
     align-items: center;
-    height: 100px;
+    height: 12em;
+    max-height: 100px;
     position: fixed;
     z-index: 2;
 
@@ -16,7 +68,7 @@
 
     .logoHeader {
         margin-top: 20px;
-        width: 22vh;
+        width: 25vh;
     }
 
     .navButtons {
