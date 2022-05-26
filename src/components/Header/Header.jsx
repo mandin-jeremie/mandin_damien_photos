@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import logoHeader from '../../assets/images/Logo-header.png'
-import { useMediaQuery } from "react-responsive";
+
 import { FaBars } from "react-icons/fa";
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
@@ -9,20 +9,13 @@ import MenuItem from '@mui/material/MenuItem';
 
 import './header.scss'
 
-const Desktop = ({ children }) => {
-  const isDesktop = useMediaQuery({ minWidth: 992 });
-  return isDesktop ? children : null;
-};
-const Tablet = ({ children }) => {
-  const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 991 });
-  return isTablet ? children : null;
-};
-const Mobile = ({ children }) => {
-  const isMobile = useMediaQuery({ minWidth: 150, maxWidth: 767 });
-  return isMobile ? children : null;
-};
 
-const Header = () => {
+
+const Header = ({
+  Desktop,
+  Tablet,
+  Mobile
+}) => {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
