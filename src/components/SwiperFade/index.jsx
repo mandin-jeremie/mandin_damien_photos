@@ -12,6 +12,7 @@ import swiper03 from '../../assets/images/swiper-03.jpg'
 import swiper04 from '../../assets/images/swiper-04.jpg'
 
 // Import Swiper styles
+
 import "swiper/scss";
 import "swiper/scss/effect-fade";
 import "swiper/scss/navigation";
@@ -25,7 +26,7 @@ const SwiperFade = () => {
     <div className='containerSwiperFade'>
       <Swiper
         autoplay={{
-          delay: 10000,
+          delay: 5000,
         }}
         spaceBetween={0}
         effect={"fade"}

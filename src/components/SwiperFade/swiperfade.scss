@@ -3,7 +3,9 @@
 
   .swiperImg {
     width: 100%;
-    max-height: 99vh;
+    height: 99%;
     object-fit: cover;
+    background-position: center;
+    transform: scale(1.2);
   }
 }
