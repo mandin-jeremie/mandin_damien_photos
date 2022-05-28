@@ -6,6 +6,7 @@ import linkpregnante from '../../assets/images/grossesse_image.png';
 import linkMariage from '../../assets/images/mariage_image.png';
 import linkPortrait from '../../assets/images/portrait_image.png';
 import imgHover from '../../assets/images/Group23.png';
+
 import './home.scss'
 
 const Home = ({
@@ -15,9 +16,12 @@ const Home = ({
 }) => {
   return (
     <div>
-      <SwiperFade />
+      <SwiperFade
+        Desktop={Desktop}
+        Tablet={Tablet}
+        Mobile={Mobile} />
       <Desktop>
-        <div className='containerHome'>
+        <div className='containerHome' >
           <h1 className='titlePage'>Capturez vos moments les plus précieux</h1>
           <div className='border'></div>
           <div className='blocLinkHeader'>

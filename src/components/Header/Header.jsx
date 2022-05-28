@@ -24,6 +24,7 @@ const Header = ({
   const handleClose = () => {
     setAnchorEl(null);
   };
+
   return (
     <div>
       <Mobile>
@@ -45,17 +46,19 @@ const Header = ({
           </Button>
           <Menu
             id="basic-menu"
+            className="navMenuMobile"
             anchorEl={anchorEl}
             open={open}
             onClose={handleClose}
             MenuListProps={{
               'aria-labelledby': 'basic-button',
+
             }}
           >
-            <MenuItem onClick={handleClose}><Link className="navButtonMobile" to="/">Home</Link></MenuItem>
-            <MenuItem onClick={handleClose}><Link className="navButtonMobile" to="/portefolio">Portefolio</Link></MenuItem>
-            <MenuItem onClick={handleClose}><Link className="navButtonMobile" to="/testimonies">Témoignages</Link></MenuItem>
-            <MenuItem onClick={handleClose}><Link className="navButtonMobile" to="/contact">Contact</Link></MenuItem>
+            <Link className="navButtonMobile" to="/"><MenuItem onClick={handleClose}>Home</MenuItem></Link>
+            <Link className="navButtonMobile" to="/portefolio"><MenuItem onClick={handleClose}>Portefolio</MenuItem></Link>
+            <Link className="navButtonMobile" to="/testimonies"><MenuItem onClick={handleClose}>Témoignages</MenuItem></Link>
+            <Link className="navButtonMobile" to="/contact"><MenuItem onClick={handleClose}>Contact</MenuItem></Link>
           </Menu>
         </header>
       </Mobile>
