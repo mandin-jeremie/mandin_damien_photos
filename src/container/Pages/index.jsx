@@ -4,6 +4,9 @@ import {
   Routes,
   Route,
 } from 'react-router-dom';
+
+import ScrollToTop from '../../components/ScrollToTop'
+
 import Contact from '../Contact';
 import Portefolio from '../Portefolio';
 import Testimonies from '../Testimonies';
@@ -22,6 +25,7 @@ const Pages = ({
 }) => {
   return (
     <div className='containerPages'>
+      <ScrollToTop />
       <Routes>
         <Route
           path="/"
